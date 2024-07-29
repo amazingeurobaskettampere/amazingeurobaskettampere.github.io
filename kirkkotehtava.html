@@ -32,7 +32,6 @@
         <p>Kalevan kirkko</p>
         <p>Ortodoksinen kirkko</p>
         <p>Pispalan kirkko</p>
-        <p>Tuomiokirkko</p>
         <p>Vanha kirkko</p>
     
     <div class="image-container">
@@ -56,18 +55,13 @@
     </div>
 
   <div class="image-container">
-        <img src="tuomio.jfif" alt="Kuva 5" width="200">
+        <img src="kaleva.jfif" alt="Kuva 5" width="200">
         <input type="text" id="input5" placeholder="Kirkon nimi">
     </div>
 
   <div class="image-container">
-        <img src="kaleva.jfif" alt="Kuva 6" width="200">
+        <img src="orto.jfif" alt="Kuva 6" width="200">
         <input type="text" id="input6" placeholder="Kirkon nimi">
-    </div>
-
-  <div class="image-container">
-        <img src="orto.jfif" alt="Kuva 7" width="200">
-        <input type="text" id="input7" placeholder="Kirkon nimi">
     </div>
 
     <button onclick="checkAnswers()">Tarkista</button>
@@ -82,7 +76,6 @@
             var input4 = document.getElementById('input4').value.trim();
             var input5 = document.getElementById('input5').value.trim();
             var input6 = document.getElementById('input6').value.trim();
-            var input7 = document.getElementById('input7').value.trim();
             var message = document.getElementById('message');
 
             var correctAnswers = {
@@ -90,15 +83,14 @@
                 input2: 'Pispalan kirkko',
                 input3: 'Finlaysonin kirkko',
                 input4: 'Vanha kirkko',
-                input5: 'Tuomiokirkko',
-                input6: 'Kalevan kirkko',
-                input7: 'Ortodoksinen kirkko'
+                input5: 'Kalevan kirkko',
+                input6: 'Ortodoksinen kirkko'
             };
 
             if (input1 === correctAnswers.input1 && input2 === correctAnswers.input2 
                 && input3 === correctAnswers.input3 && input4 === correctAnswers.input4 
-                && input5 === correctAnswers.input5 && input6 === correctAnswers.input6 && input7 === correctAnswers.input7) {
-                window.location.href = 'seuraavasivu.html';
+                && input5 === correctAnswers.input5 && input6 === correctAnswers.input6) {
+                window.location.href = 'Tammelantori.html';
             } else {
                 message.textContent = 'Väärä vastaus, yritä uudelleen.';
             }
