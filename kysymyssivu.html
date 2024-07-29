@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salasana Sivulle</title>
+    <script>
+        function tarkistaSalasana() {
+            var annettuSalasana = document.getElementById("salasana").value;
+            var oikeaSalasana = "310";
+
+            if (annettuSalasana === oikeaSalasana) {
+                window.location.href = "tehtavasivu.html";
+            } else {
+                alert("Väärä vastaus, yritä uudelleen.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Montako porrasta yhteensä?</h1>
+    <input type="text" id="salasana">
+    <button onclick="tarkistaSalasana()">Tarkista</button>
+</body>
+</html>
