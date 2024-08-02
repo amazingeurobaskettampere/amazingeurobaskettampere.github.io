@@ -26,42 +26,42 @@
 <body>
     <h1>Kirkkotehtävä</h1>
 
-        <p>Kirjoita oikean kuvan alle kirkon nimi seuraavista vaihtoehdoista</p>
-        <p>Aleksanterin kirkko</p>
-        <p>Finlaysonin kirkko</p>
-        <p>Kalevan kirkko</p>
-        <p>Ortodoksinen kirkko</p>
-        <p>Pispalan kirkko</p>
-        <p>Vanha kirkko</p>
+        <p>Kirjoita oikean kuvan alle oikeaa kirkon nimeä vastaava kirjain</p>
+        <p>a. Aleksanterin kirkko</p>
+        <p>b. Finlaysonin kirkko</p>
+        <p>c. Kalevan kirkko</p>
+        <p>d. Ortodoksinen kirkko</p>
+        <p>e. Pispalan kirkko</p>
+        <p>f. Vanha kirkko</p>
     
     <div class="image-container">
         <img src="aleksanteri.jfif" alt="Kuva 1" width="200">
-        <input type="text" id="input1" placeholder="Kirkon nimi">
+        <input type="text" id="input1" placeholder="Vastaa pelkkä kirjain">
     </div>
 
     <div class="image-container">
         <img src="pispala.jfif" alt="Kuva 2" width="200">
-        <input type="text" id="input2" placeholder="Kirkon nimi">
+        <input type="text" id="input2" placeholder="Vastaa pelkkä kirjain">
     </div>
 
   <div class="image-container">
         <img src="finlayson.jfif" alt="Kuva 3" width="200">
-        <input type="text" id="input3" placeholder="Kirkon nimi">
+        <input type="text" id="input3" placeholder="Vastaa pelkkä kirjain">
     </div>
 
   <div class="image-container">
         <img src="vanha.jfif" alt="Kuva 4" width="200">
-        <input type="text" id="input4" placeholder="Kirkon nimi">
+        <input type="text" id="input4" placeholder="Vastaa pelkkä kirjain">
     </div>
 
   <div class="image-container">
         <img src="kaleva.jfif" alt="Kuva 5" width="200">
-        <input type="text" id="input5" placeholder="Kirkon nimi">
+        <input type="text" id="input5" placeholder="Vastaa pelkkä kirjain">
     </div>
 
   <div class="image-container">
         <img src="orto.jfif" alt="Kuva 6" width="200">
-        <input type="text" id="input6" placeholder="Kirkon nimi">
+        <input type="text" id="input6" placeholder="Vastaa pelkkä kirjain">
     </div>
 
     <button onclick="checkAnswers()">Tarkista</button>
@@ -79,12 +79,12 @@
             var message = document.getElementById('message');
 
             var correctAnswers = {
-                input1: 'Aleksanterin kirkko',
-                input2: 'Pispalan kirkko',
-                input3: 'Finlaysonin kirkko',
-                input4: 'Vanha kirkko',
-                input5: 'Kalevan kirkko',
-                input6: 'Ortodoksinen kirkko'
+                input1: 'a',
+                input2: 'e',
+                input3: 'b',
+                input4: 'f',
+                input5: 'c',
+                input6: 'd'
             };
 
             if (input1 === correctAnswers.input1 && input2 === correctAnswers.input2 
